@@ -10,7 +10,21 @@ def animals():
 
     # TODO 1. Ask the user which animal they want, then see and
     #  hear the animal they chose using one of the methods below.
-
+    for i in range(10):
+        choose = simpledialog.askstring('', 'what animal do you want to hear; cat, dog, cow, duck, or llama? type "exit" to close the program')
+        if choose == 'cat':
+            meow()
+        elif choose == 'dog':
+            woof()
+        elif choose == 'cow':
+            moo()
+        elif choose == 'duck':
+            quack()
+        elif choose == 'llama':
+            llama_scream()
+        elif choose == 'exit':
+            tk._exit()
+        i = 1
     # TODO 2. Make it so that the user can keep entering new animals.
 
     # TODO 3. If the user enters 'exit', stop the program
